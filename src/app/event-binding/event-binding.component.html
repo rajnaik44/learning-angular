@@ -1,0 +1,12 @@
+<button (click)="onchange()">click me</button>
+
+<button on-click="onchange1()">click me</button><br>
+
+
+<!-- <input type="text" (keyup)="keyup()" (keydown)="keydown()"><br> -->
+
+<!-- <input type="text" on-keyup="keyup()"> -->
+
+
+Enter yout name: <input type="text" #txtname (keyup)="onclick(txtname.value)"><br>
+Your name : <b>{{name}}</b>
