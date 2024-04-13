@@ -1,0 +1,6 @@
+<!-- long form of two way -two-way-databinding -->
+<!-- <input type="text" [value]="message" #txtdata (keyup)="onchange(txtdata.value)"><br> -->
+
+<input type="text" [(ngModel)]="message"><br>
+
+Your message: <b>{{message}}</b>
