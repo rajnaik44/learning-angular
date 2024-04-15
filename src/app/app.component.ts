@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { EventBindingComponent } from './event-binding/event-binding.component';
 import { TwoWayDatabindingComponent } from './two-way-databinding/two-way-databinding.component';
+import { MessageService } from './message.service';
 
 @Component({
   selector: 'app-root',
@@ -12,4 +13,11 @@ import { TwoWayDatabindingComponent } from './two-way-databinding/two-way-databi
 })
 export class AppComponent {
   title = 'learning-angular-17';
+  _msg:string="";
+
+
+  constructor(private _messageService:MessageService){
+    this._msg=_messageService.getmessage();
+
+  }
 }
