@@ -3,11 +3,13 @@ import { RouterOutlet } from '@angular/router';
 import { EventBindingComponent } from './event-binding/event-binding.component';
 import { TwoWayDatabindingComponent } from './two-way-databinding/two-way-databinding.component';
 import { MessageService } from './message.service';
+import { Comp1Component } from './comp1/comp1.component';
+import { Comp2Component } from './comp2/comp2.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet , EventBindingComponent , TwoWayDatabindingComponent],
+  imports: [RouterOutlet , EventBindingComponent , TwoWayDatabindingComponent ,Comp1Component ,Comp2Component],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
