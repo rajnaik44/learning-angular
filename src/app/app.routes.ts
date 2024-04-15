@@ -9,5 +9,11 @@ export const routes: Routes = [
     {path:'home', component:DashboardComponent,title:'home page'},
     {path:'aboutus',component:AboutusComponent,title:'about page'},
     {path:'contactus',component:ContactusComponent,title:'contact page'},
+
+    //auxially
+    {path:'aboutusnew',component:AboutusComponent,title:'about us new page',outlet:'outlet2'},
+
+    {path:'aboutusnew/:id',component:AboutusComponent,title:'about us new page',outlet:'outlet2'},
+
     {path:'**',component:PagenorfoundComponent,title:'page not found'}
 ];
