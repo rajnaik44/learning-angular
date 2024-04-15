@@ -4,7 +4,7 @@ import { AboutusComponent } from './aboutus/aboutus.component';
 import { ContactusComponent } from './contactus/contactus.component';
 
 export const routes: Routes = [
-    {path:'home', component:DashboardComponent},
-    {path:'aboutus',component:AboutusComponent},
-    {path:'contactus',component:ContactusComponent}
+    {path:'home', component:DashboardComponent,title:'home page'},
+    {path:'aboutus',component:AboutusComponent,title:'about page'},
+    {path:'contactus',component:ContactusComponent,title:'contact page'}
 ];
