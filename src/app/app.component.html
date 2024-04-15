@@ -16,14 +16,15 @@ your message service : <b>{{_msg}}</b><br>
     <a routerLink="aboutus">About</a>
     <a routerLink="contactus">Contact</a>
     <a routerLink="students">Students</a>
+    <a routerLink="login">Log In</a>
 
-    <!-- auxixary route -->
+    <!-- auxixary route
     <a [routerLink]="[{outlets:{outlet2:['aboutusnew']}}]">aboutus new</a>
 
-    
-    <!-- sending parameter -->
-    <a [routerLink]="[{outlets:{outlet2:['aboutusnew,501']}}]">aboutus new wit parameter</a>
 
+ sending parameter -->
+    <!-- <a [routerLink]="[{outlets:{outlet2:['aboutusnew,501']}}]">aboutus new wit parameter</a> -->
+<!-- 
 </div>
 
 <div>
@@ -32,6 +33,9 @@ your message service : <b>{{_msg}}</b><br>
 
 <div>
 <router-outlet name="outlet2"></router-outlet>
-</div>
+</div> --->
 
 
+
+<!-- auth guard -->
+<router-outlet></router-outlet>
