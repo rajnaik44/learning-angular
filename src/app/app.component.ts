@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterLink, RouterOutlet } from '@angular/router';
+import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { EventBindingComponent } from './event-binding/event-binding.component';
 import { TwoWayDatabindingComponent } from './two-way-databinding/two-way-databinding.component';
 import { MessageService } from './message.service';
@@ -9,7 +9,7 @@ import { Comp2Component } from './comp2/comp2.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet , EventBindingComponent , TwoWayDatabindingComponent ,Comp1Component ,Comp2Component,RouterLink],
+  imports: [RouterOutlet , EventBindingComponent , TwoWayDatabindingComponent ,Comp1Component ,Comp2Component,RouterLink,RouterLinkActive],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
