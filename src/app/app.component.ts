@@ -6,11 +6,12 @@ import { MessageService } from './message.service';
 import { Comp1Component } from './comp1/comp1.component';
 import { Comp2Component } from './comp2/comp2.component';
 import { FormsComponent } from './forms/forms.component';
+import { ValidationformComponent } from './validationform/validationform.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet , EventBindingComponent , TwoWayDatabindingComponent ,Comp1Component ,Comp2Component,RouterLink,RouterLinkActive,FormsComponent],
+  imports: [RouterOutlet , EventBindingComponent , TwoWayDatabindingComponent ,Comp1Component ,Comp2Component,RouterLink,RouterLinkActive,FormsComponent,ValidationformComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

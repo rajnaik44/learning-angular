@@ -1,0 +1,30 @@
+<h2>Registration form</h2>
+
+
+<div>
+    <form #regdata="ngForm" (ngSubmit)="register(regdata)">
+        <div>
+            First Name: <input type="text" placeholder="Enter Your First Name" name="fname" minlength="10" maxlength="10" required ngModel #fname="ngModel">
+            <span *ngIf="fname.touched && !fname.valid">
+                First Name is Required
+
+            </span>
+        </div>
+        <div>
+            Last Name: <input type="text" placeholder="Enter Your Last Name" name="lname" required ngModel #lname="ngModel">
+            <span *ngIf="lname.touched &&!lname.valid">
+                last name is required
+            </span>
+        </div>
+        <div>
+            Email Id: <input type="email" placeholder="Enter Your Email Id" name="email" required ngModel #email="ngModel">
+            <span *ngIf="email.touched && !email.valid">
+                email is required
+            </span>
+        </div>
+
+        <div>
+            <input type="submit" value="register" [disabled]="regdata.invalid">
+        </div>
+    </form>
+</div>
