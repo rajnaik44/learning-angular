@@ -5,6 +5,7 @@ import { ContactusComponent } from './contactus/contactus.component';
 import { PagenorfoundComponent } from './pagenorfound/pagenorfound.component';
 import { LoginComponent } from './login/login.component';
 import { authGuard } from './auth.guard';
+import { SignuppComponent } from './signupp/signupp.component';
 
 export const routes: Routes = [
     {path:'',redirectTo:'home',pathMatch:'full'},
@@ -12,6 +13,9 @@ export const routes: Routes = [
     {path:'aboutus',component:AboutusComponent,title:'about page' ,canActivate:[authGuard]},
     {path:'contactus',component:ContactusComponent,title:'contact page'},
     {path:'login',component:LoginComponent,title:'login'},
+
+    {path:'signupp',component:SignuppComponent,title:'signup'},
+
 
     //auxially
     {path:'aboutusnew',component:AboutusComponent,title:'about us new page',outlet:'outlet2'},

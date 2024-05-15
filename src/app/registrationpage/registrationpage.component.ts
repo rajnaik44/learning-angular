@@ -1,4 +1,4 @@
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClient, HttpClientModule, HttpHeaders } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
@@ -47,6 +47,36 @@ export class RegistrationpageComponent implements OnInit {
     })
 
   }
+
+// //API INTEGRATION GET METHOD
+//   public getJsonValue:any;
+//   public postJsonValue:any;
+
+//   public method (){
+//     this.http.get('https://jsonplaceholder.typicode.com/todos/1').subscribe((data)=>{
+//       console.log(data);
+//       this.getJsonValue = data
+//     })
+//   }
  
+
+//   //post method
+//   public pmethod(){
+//     const header = new HttpHeaders({
+//       contentType: 'application/json'
+//     })
+
+//     let body:any = {
+//       title: "foo",
+//       body: "raj",
+//       userId: 1
+//     }
+
+//     this.http.get('https://jsonplaceholder.typicode.com/todos/1', body ).subscribe((data)=>{
+//       console.log(data);
+//       this.postJsonValue = data
+//     })
+
+//   }
 
 }

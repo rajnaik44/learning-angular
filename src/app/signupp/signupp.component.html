@@ -1,0 +1,37 @@
+<p>signupp works!</p>
+
+<div class="main">  	
+    <input type="checkbox" id="chk" aria-hidden="true">
+
+        <!-- <div class="signup">
+            <form >
+                <label for="chk" aria-hidden="true">Sign up</label>
+                <input type="text" name="firstName" placeholder="first name" required [(ngModel)]="registrationObj.firstName" >
+                <input type="text" name="lastName" placeholder="last name" required [(ngModel)]="registrationObj.lastName" >
+                <input type="email" name="email" placeholder="Email" required [(ngModel)]="registrationObj.email">
+                <input type="password" name="password" placeholder="Password" required [(ngModel)]="registrationObj.pssword" >
+                <input type="password" name="cpassword" placeholder="confirm Password" required [(ngModel)]="registrationObj.cpassword">
+                <button (click)="onRegister()" >Sign up</button>
+            </form>
+        </div> -->
+        <div class="signup">
+            <form #sellersignup="ngForm" (ngSubmit)="signUp(sellersignup.value)">
+                <label for="chk" aria-hidden="true">Sign up</label>
+                <input type="text" name="firstName" placeholder="first name" required ngModel >
+                <input type="text" name="lastName" placeholder="last name" required ngModel >
+                <input type="email" name="email" placeholder="Email" required ngModel>
+                <input type="password" name="password" placeholder="Password" required ngModel >
+                <input type="password" name="cpassword" placeholder="confirm Password" required ngModel>
+                <button type="submit" >Sign up</button>
+            </form>
+        </div>
+
+        <!-- <div class="login">
+            <form>
+                <label for="chk" aria-hidden="true">Login</label>
+                <input type="email" name="email" placeholder="Email" required="">
+                <input type="password" name="password" placeholder="Password" required="">
+                <button>Login</button>
+            </form>
+        </div> -->
+</div>
